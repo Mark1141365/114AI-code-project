@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>垃圾分類APP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>垃圾分類辨識</h1>
+        <div class="camera-section">
+            <div id="webcam-container"></div>
+            <button id="capture-btn" disabled>拍攝照片</button>
+            <br><br>
+            <input type="file" id="image-upload" accept="image/*" style="display: none;">
+            <button id="upload-btn" disabled>上傳圖片</button>
+        </div>
+        <div class="result-section">
+            <p id="result">請拍攝照片進行辨識</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.21.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.4/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
